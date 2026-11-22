@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --poster: #fdf3d8;
+    --poster-2: #f6e2b3;
+    --ink: #2b1d16;
+    --green: #006a4e;
+    --red: #e63946;
+    --mustard: #f4c542;
+    --teal: #2a9d8f;
+    --clay: #b45309;
+  }
+
+  html { color-scheme: light; }
+
+  body {
+    background-color: var(--poster);
+    color: var(--ink);
+    font-family: var(--font-sans), system-ui, sans-serif;
+    /* subtle hand-painted poster grain */
+    background-image:
+      radial-gradient(circle at 8% 12%, rgba(230, 57, 70, 0.06) 0, transparent 26%),
+      radial-gradient(circle at 92% 6%, rgba(244, 197, 66, 0.18) 0, transparent 30%),
+      radial-gradient(circle at 50% 100%, rgba(42, 157, 143, 0.07) 0, transparent 40%),
+      repeating-linear-gradient(45deg, rgba(43, 29, 22, 0.012) 0 2px, transparent 2px 6px);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection { background: rgba(230, 57, 70, 0.25); }
+}
+
+@layer components {
+  /* poster card: thick frame, hard shadow, like a painted signboard */
+  .poster-card {
+    background: #fffaf0;
+    border: 2px solid var(--ink);
+    box-shadow: 5px 5px 0 0 var(--ink);
+  }
+
+  .poster-card-sm {
+    background: #fffaf0;
+    border: 2px solid var(--ink);
+    box-shadow: 3px 3px 0 0 var(--ink);
+  }
+
+  /* rickshaw-canopy striped band */
+  .canopy-stripes {
+    background: repeating-linear-gradient(
+      90deg,
+      var(--red) 0 22px,
+      var(--mustard) 22px 44px,
+      var(--green) 44px 66px,
+      #2a9d8f 66px 88px
+    );
+  }
+
+  .ink-panel {
+    background: #1d2b26;
+    background-image: radial-gradient(circle at 85% 0%, rgba(244, 197, 66, 0.12), transparent 45%);
+    color: #e7f6e8;
+  }
+
+  .poster-title {
+    font-family: var(--font-display), Georgia, serif;
+    text-shadow: 2px 2px 0 var(--red), 4px 4px 0 rgba(43, 29, 22, 0.18);
+  }
+
+  .ruled {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 31px,
+      rgba(43, 29, 22, 0.08) 31px,
+      rgba(43, 29, 22, 0.08) 32px
+    );
+  }
+
+  .stamp {
+    border: 3px double var(--red);
+    border-radius: 4px;
+    transform: rotate(-9deg);
+    letter-spacing: 0.16em;
+  }
+}
+
+@layer utilities {
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes sway {
+    0%, 100% { transform: rotate(-2deg); }
+    50% { transform: rotate(2deg); }
+  }
+  .animate-sway { animation: sway 3.5s ease-in-out infinite; }
+
+  @keyframes bob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+
+  @keyframes wave {
+    0%, 100% { transform: rotate(-12deg); }
+    50% { transform: rotate(18deg); }
+  }
+
+  @keyframes blink {
+    0%, 92%, 100% { transform: scaleY(1); }
+    95% { transform: scaleY(0.1); }
+  }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.25; transform: scale(0.7) rotate(0deg); }
+    50% { opacity: 1; transform: scale(1.2) rotate(25deg); }
+  }
+
+  @keyframes popIn {
+    0% { opacity: 0; transform: scale(0.9) translateY(8px); }
+    100% { opacity: 1; transform: scale(1) translateY(0); }
+  }
+  .animate-pop { animation: popIn 0.35s ease-out both; }
+
+  @keyframes confettiFall {
+    0% { opacity: 1; transform: translateY(-20px) rotate(0deg); }
+    100% { opacity: 0; transform: translateY(220px) rotate(540deg); }
+  }
+  .animate-confetti { animation: confettiFall 1.8s ease-in forwards; }
+
+  @keyframes ticker {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  .thin-scrollbar::-webkit-scrollbar { width: 8px; height: 8px; }
+  .thin-scrollbar::-webkit-scrollbar-thumb { background: rgba(43, 29, 22, 0.25); border-radius: 8px; }
+  .thin-scrollbar::-webkit-scrollbar-track { background: transparent; }
+}
+
+@media print {
+  body { background: #fff !important; }
+}

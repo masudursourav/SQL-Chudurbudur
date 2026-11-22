@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 460" width="1600" height="460">
+  <defs>
+    <radialGradient id="sun" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#ffcf4d"/>
+      <stop offset="45%" stop-color="#f26a21"/>
+      <stop offset="100%" stop-color="#c81e2e"/>
+    </radialGradient>
+    <linearGradient id="knife" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5f0e0"/><stop offset="100%" stop-color="#b9b2a0"/>
+    </linearGradient>
+    <linearGradient id="gun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3f6f9c"/><stop offset="100%" stop-color="#16314f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- dark maroon surround -->
+  <rect width="1600" height="460" fill="#36160f"/>
+
+  <!-- painted art band -->
+  <g transform="translate(30,90)">
+    <rect width="1540" height="280" fill="url(#sun)"/>
+
+    <!-- sunburst rays -->
+    <g stroke="#ffd35a" stroke-width="7" opacity="0.55">
+      <g transform="translate(770,140)">
+        <path d="M0 0 L-900 -170 L-900 -120 Z"/>
+        <path d="M0 0 L-900 -40 L-900 20 Z"/>
+        <path d="M0 0 L-900 100 L-900 160 Z"/>
+        <path d="M0 0 L900 -190 L900 -130 Z"/>
+        <path d="M0 0 L900 -30 L900 40 Z"/>
+        <path d="M0 0 L900 120 L900 190 Z"/>
+        <path d="M0 0 L-500 -260 L-420 -270 Z"/>
+        <path d="M0 0 L520 -270 L610 -255 Z"/>
+      </g>
+    </g>
+
+    <!-- LEFT: heroine with bloody knife -->
+    <g transform="translate(330,140)">
+      <!-- hair mass -->
+      <path d="M-170 -120 Q-190 -30 -150 130 Q-60 170 30 120 Q90 30 60 -110 Q0 -180 -170 -120Z" fill="#160f0c"/>
+      <g stroke="#7a2a1c" stroke-width="3" fill="none" opacity="0.85">
+        <path d="M-150 -100 Q-60 -150 40 -90"/>
+        <path d="M-160 -60 Q-50 -120 55 -50"/>
+        <path d="M-155 -20 Q-40 -80 60 -10"/>
+        <path d="M-145 20 Q-30 -40 55 30"/>
+      </g>
+      <!-- face -->
+      <path d="M-120 -95 Q-20 -120 55 -70 Q80 10 45 105 Q-20 150 -95 100 Q-135 20 -120 -95Z" fill="#f4696f" stroke="#160f0c" stroke-width="5"/>
+      <path d="M-100 40 Q-30 100 45 60 Q30 130 -30 125 Q-90 105 -100 40Z" fill="#ff8f7e" opacity="0.7"/>
+      <!-- eyes with teal shadow -->
+      <g>
+        <path d="M-98 -30 Q-60 -55 -28 -35 Q-60 -20 -98 -30Z" fill="#f4a832" opacity="0.9"/>
+        <path d="M-5 -40 Q30 -60 62 -38 Q30 -24 -5 -40Z" fill="#f4a832" opacity="0.9"/>
+        <ellipse cx="-62" cy="-25" rx="26" ry="14" fill="#fff6e8" stroke="#160f0c" stroke-width="4"/>
+        <ellipse cx="28" cy="-30" rx="26" ry="14" fill="#fff6e8" stroke="#160f0c" stroke-width="4"/>
+        <circle cx="-58" cy="-25" r="11" fill="#1d8c8c" stroke="#160f0c" stroke-width="3"/>
+        <circle cx="32" cy="-30" r="11" fill="#1d8c8c" stroke="#160f0c" stroke-width="3"/>
+        <circle cx="-58" cy="-25" r="5" fill="#160f0c"/>
+        <circle cx="32" cy="-30" r="5" fill="#160f0c"/>
+        <path d="M-90 -48 Q-62 -66 -34 -48 M-2 -54 Q28 -72 58 -52" fill="none" stroke="#160f0c" stroke-width="7" stroke-linecap="round"/>
+      </g>
+      <!-- nose & lips -->
+      <path d="M-20 -5 Q-5 20 -30 28" fill="none" stroke="#8f2230" stroke-width="4"/>
+      <path d="M-55 60 Q-15 48 20 62 Q-10 82 -55 60Z" fill="#d8344c" stroke="#160f0c" stroke-width="3"/>
+      <!-- bloody knife -->
+      <g transform="translate(30,150) rotate(-24)">
+        <path d="M-14 0 L-14 -150 Q0 -178 14 -150 L14 0Z" fill="url(#knife)" stroke="#160f0c" stroke-width="4"/>
+        <path d="M-22 0 L22 0 L22 22 L-22 22Z" fill="#2a1c14" stroke="#160f0c" stroke-width="3"/>
+        <path d="M-8 -150 Q-4 -172 0 -176 Q6 -168 8 -150" fill="#a3121f" opacity="0.9"/>
+        <path d="M-14 -120 Q-20 -100 -12 -80 M14 -100 Q20 -80 12 -60" stroke="#a3121f" stroke-width="5" fill="none"/>
+      </g>
+    </g>
+
+    <!-- CENTER: screaming heroine -->
+    <g transform="translate(790,140)">
+      <path d="M-110 -110 Q-140 -20 -100 120 Q0 160 90 110 Q120 -30 90 -120 Q0 -175 -110 -110Z" fill="#141019"/>
+      <g stroke="#4a3b6b" stroke-width="4" fill="none">
+        <path d="M-100 -90 Q0 -140 90 -85"/>
+        <path d="M-105 -40 Q0 -95 95 -35"/>
+        <path d="M-100 10 Q0 -45 98 5"/>
+      </g>
+      <path d="M-88 -85 Q0 -110 78 -60 Q95 10 60 90 Q0 125 -70 85 Q-105 10 -88 -85Z" fill="#ef5b62" stroke="#160f0c" stroke-width="5"/>
+      <path d="M-60 25 Q0 75 62 30 Q40 95 -10 92 Q-50 75 -60 25Z" fill="#ff8a72" opacity="0.7"/>
+      <!-- angry eyes -->
+      <g>
+        <path d="M-65 -35 Q-38 -50 -12 -32 Q-40 -20 -65 -35Z" fill="#fff6e8" stroke="#160f0c" stroke-width="3"/>
+        <path d="M12 -35 Q40 -52 66 -34 Q40 -20 12 -35Z" fill="#fff6e8" stroke="#160f0c" stroke-width="3"/>
+        <circle cx="-38" cy="-34" r="7" fill="#160f0c"/>
+        <circle cx="40" cy="-35" r="7" fill="#160f0c"/>
+        <path d="M-70 -55 L-10 -40 M10 -40 L70 -58" stroke="#160f0c" stroke-width="9" stroke-linecap="round"/>
+      </g>
+      <!-- open screaming mouth -->
+      <path d="M-36 30 Q0 12 38 32 Q30 92 0 96 Q-32 88 -36 30Z" fill="#5c0d1c" stroke="#160f0c" stroke-width="4"/>
+      <path d="M-28 36 Q0 26 30 38 Q18 54 0 54 Q-20 52 -28 36Z" fill="#fff6e8"/>
+      <path d="M-24 74 Q0 62 26 76 Q0 90 -24 74Z" fill="#e8546a"/>
+    </g>
+
+    <!-- RIGHT: green villain with revolver -->
+    <g transform="translate(1300,140)">
+      <path d="M-120 -120 Q-150 -20 -110 130 Q0 170 100 120 Q130 -30 100 -125 Q0 -175 -120 -120Z" fill="#13231a"/>
+      <g stroke="#2f5a3f" stroke-width="4" fill="none">
+        <path d="M-110 -100 Q0 -150 100 -95"/>
+        <path d="M-115 -50 Q0 -100 105 -45"/>
+      </g>
+      <path d="M-95 -90 Q0 -115 82 -60 Q100 10 62 95 Q0 130 -72 90 Q-110 10 -95 -90Z" fill="#6aa86f" stroke="#160f0c" stroke-width="5"/>
+      <path d="M-70 30 Q0 80 65 35 Q40 100 -15 95 Q-55 78 -70 30Z" fill="#8cc48c" opacity="0.6"/>
+      <!-- wide staring eyes -->
+      <g>
+        <ellipse cx="-52" cy="-25" rx="27" ry="17" fill="#fff6e8" stroke="#160f0c" stroke-width="4"/>
+        <ellipse cx="40" cy="-25" rx="27" ry="17" fill="#fff6e8" stroke="#160f0c" stroke-width="4"/>
+        <circle cx="-50" cy="-24" r="10" fill="#c0392b" stroke="#160f0c" stroke-width="3"/>
+        <circle cx="42" cy="-24" r="10" fill="#c0392b" stroke="#160f0c" stroke-width="3"/>
+        <circle cx="-50" cy="-24" r="4.5" fill="#160f0c"/>
+        <circle cx="42" cy="-24" r="4.5" fill="#160f0c"/>
+        <path d="M-82 -52 Q-50 -68 -20 -50 M10 -50 Q42 -70 72 -52" fill="none" stroke="#160f0c" stroke-width="8" stroke-linecap="round"/>
+      </g>
+      <!-- red brow scar -->
+      <path d="M-80 -62 L-24 -70" stroke="#c0392b" stroke-width="9" stroke-linecap="round"/>
+      <!-- mustache & teeth -->
+      <path d="M-42 35 Q-18 18 0 32 Q18 18 42 35 Q18 42 0 38 Q-18 42 -42 35Z" fill="#160f0c"/>
+      <path d="M-30 55 Q0 45 30 57 Q18 74 0 74 Q-18 72 -30 55Z" fill="#fff6e8" stroke="#160f0c" stroke-width="3"/>
+      <path d="M-16 56 v14 M0 54 v16 M16 56 v14" stroke="#160f0c" stroke-width="2"/>
+      <!-- revolver -->
+      <g transform="translate(-90,105) rotate(18)">
+        <path d="M0 -20 L120 -34 L124 -10 L4 6Z" fill="url(#gun)" stroke="#160f0c" stroke-width="4"/>
+        <rect x="30" y="4" width="34" height="44" rx="6" fill="#4a2e1e" stroke="#160f0c" stroke-width="4"/>
+        <circle cx="10" cy="-12" r="10" fill="none" stroke="#160f0c" stroke-width="4"/>
+        <circle cx="118" cy="-22" r="6" fill="#160f0c"/>
+      </g>
+    </g>
+  </g>
+</svg>
