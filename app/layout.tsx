@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { DM_Sans, Fraunces, JetBrains_Mono, Noto_Sans_Bengali } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 
 const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-sans', display: 'swap' });
@@ -20,7 +21,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       lang="en"
       className={`${dmSans.variable} ${fraunces.variable} ${mono.variable} ${bengali.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
